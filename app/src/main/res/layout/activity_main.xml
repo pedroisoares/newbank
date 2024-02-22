@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtSaldo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1595.25"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.586"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Hello, Charlie!"
+        app:titleTextColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnPix"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="56dp"
+        android:onClick="btnPix_click"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSaldo" />
+
+    <Button
+        android:id="@+id/btnPagar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="56dp"
+        android:onClick="btnPagar_click"
+        android:text="Pix"
+        app:layout_constraintStart_toEndOf="@+id/btnPix"
+        app:layout_constraintTop_toBottomOf="@+id/txtSaldo" />
+
+    <Button
+        android:id="@+id/btnTransf"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="132dp"
+        android:onClick="btnTransf_click"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toEndOf="@+id/btnPagar"
+        app:layout_constraintTop_toBottomOf="@+id/txtSaldo" />
+
+    <Button
+        android:id="@+id/btnDepos"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="56dp"
+        android:onClick="btnDepos_click"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toEndOf="@+id/btnTransf"
+        app:layout_constraintTop_toBottomOf="@+id/txtSaldo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
